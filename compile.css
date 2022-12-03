@@ -1,0 +1,11 @@
+.all_codes{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+}
+h2{
+    text-align: center;
+}
+.all_codes.all_codes_non-active{
+    display: none;
+}
