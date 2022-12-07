@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--Мета теги-->
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+    <meta content='true' name='HandheldFriendly'/>
+    <meta content='width' name='MobileOptimized'/>
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
+    <!--Иконка-->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel = "stylesheet" href = "hotkeys.css">
+    <!--Название сайта-->
+    <title>BestIDE</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav_1"> 		
+                <a href="index.html" class="menu_button">
+                    Главная
+                </a>
+                <a href="links.html" class="menu_button">
+                    Обзор
+                </a>
+                <a href="desire.html" class="menu_button">
+                    Список желаний
+                </a>
+                <a href="hotkeys.html" class="menu_button">
+                    Горячие клавиши
+                </a> 
+                <a href="compile.html" class="menu_button">
+                    Компилятор
+                </a> 
+            </nav>
+            <input type="checkbox" id="mobile-input" />
+            <label for="mobile-input" id="mobile-button"><span></span></label>
+            <div id="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="links.html">Обзор</a></li>
+                    <li><a href="desire.html">Список желаний</a></li>
+                    <li><a href="hotkeys.html">Горячие клавиши</a></li>
+                    <li><a href="compile.html">Компилятор</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="cards_ide cards_ide_1">
+                <ul class ="cards_full_ide cards_non-free">
+                    <li>
+                        <h1>PhpStorm</h1>
+                        <span>Платный</span>
+                    </li>
+                    <li>
+                        <h1>Clion</h1>
+                        <span>Платный</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards_ide cards_ide_2">
+                <ul class ="cards_full_ide cards_half-free">
+                    <li>
+                        <h1>Visual Studio</h1>
+                        <span>Полуплатный</span>
+                    </li>
+                    <li>
+                        <h1>PyCharm</h1>
+                        <span>Полуплатный</span>
+                    </li>
+                    <li>
+                        <h1>IntelliJ IDEA</h1>
+                        <span>Полуплатный</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="cards_ide cards_ide_3">
+                <ul class ="cards_full_ide cards_free">
+                    <li>
+                        <h1>Eclipse</h1>
+                        <span>Бесплатный</span>
+                    </li>
+                    <li>
+                        <h1>NetBeans</h1>
+                        <span>Бесплатный</span>
+                    </li>
+                    <li>
+                        <h1>Xcode</h1>
+                        <span>Бесплатный</span>
+                    </li>
+                    <li>
+                        <h1>Code::Blocks</h1>
+                        <span>Бесплатный</span>
+                    </li>
+                    <li>
+                        <h1>Komodo</h1>
+                        <span>Бесплатный</span>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script src = "hotkeys.js"></script>
+    </body>
+</html>

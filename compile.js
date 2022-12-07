@@ -1,5 +1,6 @@
 const window_height = window.innerHeight;
 const window_width = window.innerWidth;
+/* Exapmle for video adding
 function addVideo(){
     var attrVideo = {
         'class': 'rotate_video',
@@ -17,9 +18,23 @@ function addVideo(){
     }
     var video_element = $('<video>').attr(attrVideo);
     var source_element = $('<source>').attr(attrSource);
-    console.log(video_element);
     video_element.append(source_element);
     return video_element;
+}*/
+function addGif(){
+    var attrGif = {
+        'src': 'rotate_phone.gif',
+        'width': '250',
+        'height': '150',
+    }
+    var gif_element = $('<img>').attr(attrGif);
+    gif_element.css({
+        'position': 'absolute',
+        'top': '30%',
+        'left': '50%',
+        'transform': 'translate(-50%, -50%)'
+    })
+    return gif_element;
 }
 if(window_width < 780){
     const rotate_elem = document.createElement('div');
@@ -31,12 +46,22 @@ if(window_width < 780){
     rotate_text.style.left = "50%";
     rotate_text.append(rotate_elem_text);
     rotate_elem.append(rotate_text);
-    addVideo().appendTo(rotate_elem);
+    addGif().appendTo(rotate_elem);
     rotate_text.style.transform = "translate(-50%, -50%)";
     rotate_elem.style.width = document.body.offsetWidth + "px";
     rotate_elem.style.height = document.body.offsetHeight + "px";
     rotate_elem.style.background = "black";
     const all_codes = document.querySelector(".all_codes");
-    all_codes.classList.add("all_codes_non-active");
     document.body.prepend(rotate_elem);
 }
+function chooseLang(){
+    var ch_lang = document.querySelector('select');
+    let k = 0;
+    ch_lang.addEventListener("change", function(){
+        console.log( ch_lang[ch_lang.value - 1]);
+        document.querySelectorAll('.code')[k].style.display = "none";
+        document.querySelectorAll('.code')[ch_lang.value - 1].style.display = "block";
+        k = ch_lang.value - 1;
+    });
+}
+chooseLang();

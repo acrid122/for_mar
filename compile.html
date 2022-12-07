@@ -10,35 +10,76 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel = "stylesheet" href = "compile.css">
     <!--Название сайта-->
-    <title>GenBlock</title>
+    <title>BestIDE</title>
     </head>
     <body>
+        <header>
+            <nav class="nav_1"> 		
+                <a href="index.html" class="menu_button">
+                    Главная
+                </a>
+                <a href="links.html" class="menu_button">
+                    Обзор
+                </a>
+                <a href="desire.html" class="menu_button">
+                    Список желаний
+                </a>
+                <a href="hotkeys.html" class="menu_button">
+                    Горячие клавиши
+                </a> 
+                <a href="compile.html" class="menu_button">
+                    Компилятор
+                </a> 
+            </nav>
+            <input type="checkbox" id="mobile-input" />
+            <label for="mobile-input" id="mobile-button"><span></span></label>
+            <div id="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="links.html">Обзор</a></li>
+                    <li><a href="desire.html">Список желаний</a></li>
+                    <li><a href="hotkeys.html">Горячие клавиши</a></li>
+                    <li><a href="compile.html">Компилятор</a></li>
+                </ul>
+            </div>
+        </header>
+        <select>
+            <option selected value="0">Select language</option>
+            <option value="1"><h2>Java run</h2></option>
+            <option value="2"><h2>Python run</h2></option>
+            <option value="3"><h2>C++ run</h2></option>
+            <option value="4"><h2>Pascal run</h2></option>
+        </select>
       <div class = "all_codes">
-        <h2>Java run</h2>
-        <div class = "code" data-pym-src='https://www.jdoodle.com/plugin' data-language="java"
-            data-version-index="4"> public class HelloWorld {
-                public static void main(String[] args) {
-                    System.out.println("Hello, World!"); 
+        <div class="java_comp">
+            <div class = "code" data-pym-src='https://www.jdoodle.com/plugin' data-language="java"
+                data-version-index="4"> public class HelloWorld {
+                    public static void main(String[] args) {
+                        System.out.println("Hello, World!"); 
+                    }
                 }
-            }
+            </div>
         </div>
-        <h2>Python run</h2>
-        <div class = "code" data-pym-src='https://www.jdoodle.com/plugin' data-language="python3"
-            data-version-index="4">print("Hello, World!")
+        <div class="py_comp">
+            <div class = "code" data-pym-src='https://www.jdoodle.com/plugin' data-language="python3"
+                data-version-index="4">print("Hello, World!")
+            </div>
         </div>
-        <h2>C++ run</h2>
-        <div class = "code" data-pym-src='https://www.jdoodle.com/plugin' data-language="cpp" data-version-index="4">#include&lt;iostream&gt;
-            int main(){
-                std::cout&lt;&lt;"Hello, World!"&lt;&lt;std::endl; 
-            }
+        <div class="cpp_comp">
+            <div class = "code" data-pym-src='https://www.jdoodle.com/plugin' data-language="cpp" data-version-index="4">#include&lt;iostream&gt;
+                int main(){
+                    std::cout&lt;&lt;"Hello, World!"&lt;&lt;std::endl; 
+                }
+            </div>
         </div>
-        <h2>Pascal run</h2>
-        <div class = "code" data-pym-src='https://www.jdoodle.com/plugin' data-language="pascal"
-            data-version-index="3">program Hello;
-                begin
-                    writeln ('Hello, world.');
-                    readln
-                end.
+        <div class="pas_comp">
+            <div class = "code" data-pym-src='https://www.jdoodle.com/plugin' data-language="pascal"
+                data-version-index="3">program Hello;
+                    begin
+                        writeln ('Hello, world.');
+                        readln
+                    end.
+            </div>
         </div>
     </div>
     </body>
