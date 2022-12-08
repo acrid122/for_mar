@@ -1,5 +1,9 @@
 const window_height = window.innerHeight;
 const window_width = window.innerWidth;
+const rotate_elem = document.createElement('div');
+const rotate_text = document.createElement('p');
+const rotate_elem_text = document.createTextNode("Пожалуйста, переверните телефон");
+const section_choose = document.querySelector('select');
 /* Exapmle for video adding
 function addVideo(){
     var attrVideo = {
@@ -37,9 +41,6 @@ function addGif(){
     return gif_element;
 }
 if(window_width < 780){
-    const rotate_elem = document.createElement('div');
-    const rotate_text = document.createElement('p');
-    const rotate_elem_text = document.createTextNode("Пожалуйста, переверните телефон");
     rotate_elem.style.color = "white";
     rotate_text.style.position = "absolute";
     rotate_text.style.top = "50%";
@@ -51,8 +52,17 @@ if(window_width < 780){
     rotate_elem.style.width = document.body.offsetWidth + "px";
     rotate_elem.style.height = document.body.offsetHeight + "px";
     rotate_elem.style.background = "black";
+    section_choose.style.display = "none";
     const all_codes = document.querySelector(".all_codes");
     document.body.prepend(rotate_elem);
+}
+function check_window_width(){
+    if(window.innerWidth > 780){
+        rotate_elem.remove();
+        rotate_elem_text.remove();
+        rotate_text.remove();
+        section_choose.style.display = "block";
+    }
 }
 function chooseLang(){
     var ch_lang = document.querySelector('select');
@@ -65,3 +75,4 @@ function chooseLang(){
     });
 }
 chooseLang();
+setInterval(check_window_width, 200);

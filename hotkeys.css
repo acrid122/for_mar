@@ -66,7 +66,7 @@ html, body *{
     height: 4px;
     width: 35px;
     border-radius: 2px;
-    background-color: black;
+    background-color: white;
     position: relative;
     display: block;
     transition: all .2s ease-in-out;
@@ -76,7 +76,7 @@ html, body *{
     width: 35px;
     border-radius: 2px;
     position: absolute;
-    background-color: black;
+    background-color: white;
     content: "";
     transition: all .2s ease-in-out;
   }
@@ -306,3 +306,179 @@ html, body *{
   .cards_free:hover li:nth-child(5){
     transform: rotate(0deg) skew(0) translate(-150%, 25%);
   }
+  @media (max-width: 780px) {
+    #mobile-menu, #mobile-button{
+      display: block;
+    }
+    .nav_1{
+      display: none;
+    }
+    .cards_ide_1{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 20%;
+      left: 0%;
+    }
+    .cards_ide_2{
+      top: 40%;
+      left: 25%;
+    }
+    .cards_ide_3{
+      top: 60%;
+      left: 50%;
+    }
+    .cards_full_ide{
+      list-style: none;
+      text-align: center;
+    }
+    .cards_full_ide li{
+      width: 100px;
+      height: 170px;
+    }
+    .cards_full_ide li h1{
+      margin-top: 50px;
+      font-size: 10px;
+    }
+    .cards_full_ide span {
+      font-size: 10px;
+    }
+    .cards_full_ide{
+      list-style: none;
+      text-align: center;
+      margin-left: -50px;
+      margin-top: -180px;
+    }
+    }
+    @media (min-width: 780px) and (max-width: 1020px) {
+      #mobile-menu, #mobile-button{
+        display: block;
+      }
+      .nav_1{
+        display: none;
+      }
+      .cards_ide_1{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 2%;
+      }
+      .cards_ide_2{
+        top: 30%;
+        left: 32%;
+      }
+      .cards_ide_3{
+        top: 40%;
+        left: 62%;
+      }
+      .cards_full_ide{
+        list-style: none;
+        text-align: center;
+      }
+      .cards_full_ide li{
+        width: 150px;
+        height: 220px;
+      }
+      .cards_full_ide li h1{
+        margin-top: 50px;
+        font-size: 10px;
+      }
+      .cards_full_ide span {
+        font-size: 10px;
+      }
+      .cards_full_ide{
+        list-style: none;
+        text-align: center;
+        margin-left: -50px;
+        margin-top: -180px;
+      }
+    }
+    @media (min-width: 1020px) and (max-width: 1200px) {
+      #mobile-menu, #mobile-button{
+        display: block;
+      }
+      .nav_1{
+        display: none;
+      }
+      .cards_ide_1{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 2%;
+      }
+      .cards_ide_2{
+        top: 30%;
+        left: 32%;
+      }
+      .cards_ide_3{
+        top: 40%;
+        left: 62%;
+      }
+      .cards_full_ide{
+        list-style: none;
+        text-align: center;
+      }
+      .cards_full_ide li{
+        width: 150px;
+        height: 220px;
+      }
+      .cards_full_ide li h1{
+        margin-top: 50px;
+        font-size: 15px;
+      }
+      .cards_full_ide span {
+        font-size: 15px;
+      }
+      .cards_full_ide{
+        list-style: none;
+        text-align: center;
+        margin-left: -50px;
+        margin-top: -180px;
+      }
+    }
+    @media (min-width: 1200px) and (max-width: 1600px){
+      #mobile-menu, #mobile-button{
+        display: block;
+      }
+      .nav_1{
+        display: none;
+      }
+      .cards_ide_1{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+      }
+      .cards_ide_2{
+        top: 30%;
+        left: 40%;
+      }
+      .cards_ide_3{
+        top: 40%;
+        left: 70%;
+      }
+      .cards_full_ide{
+        list-style: none;
+        text-align: center;
+      }
+      .cards_full_ide li{
+        width: 200px;
+        height: 270px;
+      }
+      .cards_full_ide li h1{
+        margin-top: 50px;
+        font-size: 20px;
+      }
+      .cards_full_ide span {
+        font-size: 20px;
+      }
+      .cards_full_ide{
+        list-style: none;
+        text-align: center;
+        margin-left: -50px;
+        margin-top: -180px;
+      }
+    }

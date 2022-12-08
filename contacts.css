@@ -71,7 +71,6 @@ html, body {
     cursor: pointer;
     user-select: none;
     display: none;
-    z-index: 101;
   }
   #mobile-button span{
     height: 4px;
@@ -119,12 +118,12 @@ html, body {
     opacity: 1;
   }  
   #mobile-menu {
-    height: 100vh;
-    width: 100vw;
+    min-width: 100%;
+    min-height: 100%;
     background: #ec6451;
+    z-index: 2;
     visibility: hidden;
     position: fixed;
-    z-index: 100;
     display: none;
   }
   #mobile-menu.active {
@@ -151,80 +150,116 @@ html, body {
   #mobile-menu ul li a:hover{
     color: #333332;
   }
-.all_codes{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 35%;
-    left: 15%;
-    max-width: 70%;
+.form{
+    width:340px;
+    height:440px;
+    background:white;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 h2{
-    text-align: center;
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;
+    color:#78788c;
+    border-bottom:3px solid #78788c
 }
-.code{
-    display: none;
-    border: 2px solid rgb(204, 0, 255);
-    border-radius: 2px;
+input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
 }
-select {
-    /* Reset */
-    appearance: none;
-    border: 0;
-    outline: 0;
-    font: inherit;
-    /* Personalize */
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%, 0);
-    width: 20em;
-    height: 3em;
-    padding: 0 4em 0 1em;
-    background: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg)
-        no-repeat right 0.8em center / 1.4em,
-      linear-gradient(to left,#5bf403 3em, #8128ff 3em);
-    color: white;
-    border-radius: 0.25em;
-    box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-  }
-  select option {
-    color: inherit;
-    background-color: #320a28;
-  }
-  select::-ms-expand {
-    display: none;
-  }
-  select:focus {
-    outline: none;
-  }
-  @media (max-width: 780px) {
+input:focus{
+    border-bottom:2px solid #78788c
+}
+p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:14px;
+    color:#5a5a5a
+}
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    border:2px solid #78788c;
+    background:0;
+    color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+button:hover{
+    background:#38094b;
+    color:#fff
+}
+div{content:'Hi';
+    position:absolute;
+    bottom:-15px;
+    right:-20px;
+    background:#440252;
+    color:#fff;
+    width:320px;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px #000
+}
+span{
+    margin:0 5px 0 15px
+}
+@media (max-width: 780px) {
+    #mobile-menu, #mobile-button{
+      display: block;
+    }
     .nav_1{
       display: none;
     }
-      }
-      @media (min-width: 780px) and (max-width: 1020px) {
-        #mobile-menu, #mobile-button{
-          display: block;
-        }
-        .nav_1{
-          display: none;
-        }
-      }
-      @media (min-width: 1020px) and (max-width: 1200px) {
-        #mobile-menu, #mobile-button{
-          display: block;
-        }
-        .nav_1{
-          display: none;
-        }
-      }
-      @media (min-width: 1200px) and (max-width: 1600px){
-        #mobile-menu, #mobile-button{
-          display: block;
-        }
-        .nav_1{
-          display: none;
-        }
-      }
+    }
+@media (max-width: 780px) {
+#mobile-menu, #mobile-button{
+    display: block;
+}
+.nav_1{
+    display: none;
+}
+}
+@media (min-width: 780px) and (max-width: 1020px) {
+#mobile-menu, #mobile-button{
+    display: block;
+}
+.nav_1{
+    display: none;
+}
+}
+@media (min-width: 1020px) and (max-width: 1200px) {
+#mobile-menu, #mobile-button{
+    display: block;
+}
+.nav_1{
+    display: none;
+}
+}
+@media (min-width: 1200px) and (max-width: 1600px){
+#mobile-menu, #mobile-button{
+    display: block;
+}
+.nav_1{
+    display: none;
+}
+}
+    
+    
+  

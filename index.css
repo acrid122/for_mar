@@ -76,7 +76,7 @@ html, body {
     height: 4px;
     width: 35px;
     border-radius: 2px;
-    background-color: black;
+    background-color: white;
     position: relative;
     display: block;
     transition: all .2s ease-in-out;
@@ -86,7 +86,7 @@ html, body {
     width: 35px;
     border-radius: 2px;
     position: absolute;
-    background-color: black;
+    background-color: white;
     content: "";
     transition: all .2s ease-in-out;
   }
@@ -289,8 +289,33 @@ html, body {
   .what_means_ide p{
     margin-left: 40%;
   }
-  .diff_ide_vs_txt, .ide_include{
+  .diff_ide_vs_txt{
     color: white;
+  }
+  .diff_ide_vs_txt h2{
+    color: #5bf403;
+    margin-left: 5%;
+    font-size: 35px;
+  }
+  .diff_ide_vs_txt h2:nth-child(2){
+    font-size: 30px;
+  }
+  .diff_ide_vs_txt h3{
+    max-width: 70%;
+    margin-left: 20%;
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .diff_ide_vs_txt .factors_ide{
+    margin-left: 5%;
+    font-size: 20px;
+  }
+  .diff_ide_vs_txt ul{
+    margin-left: 20%;
+  }
+  .diff_ide_vs_txt ul p{
+    color: #fc00ff;
+    font-size: 18px;
   }
   /*Footer*/
   /*footer{
@@ -304,16 +329,195 @@ html, body {
   .nav_1{
     display: none;
   }
+  .what_is_ide h3{
+    font-size: 20px;
+    line-height: 30px;
   }
-  @media (min-width: 780px) and (max-width: 1020px) {
- 
+  .what_is_ide .glitch{
+    font-size: 4rem;
   }
-  @media (min-width: 1020px) and (max-width: 1200px) {
-
+  .coding_g{
+    display: none;
   }
-  @media (min-width: 1200px) {
-
+  .what_means_ide img{
+    height: 300px;
+    width: 250px;
+    border: none;
   }
-  
+  .what_means_ide p{
+    font-size: 15px;
+    margin-left: 5%;
+    line-height: 20px;
+  }
+  .diff_ide_vs_txt h2{
+    font-size: 20px;
+  }
+  .diff_ide_vs_txt h2:nth-child(2){
+    font-size: 16px;
+  }
+  .diff_ide_vs_txt h3{
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .diff_ide_vs_txt .factors_ide{
+    font-size: 10px;
+  }
+  .diff_ide_vs_txt ul p{
+    font-size: 14px;
+  }
+  .diff_ide_vs_txt ul li{
+    font-size: 10px;
+  }
+    }
+    @media (min-width: 780px) and (max-width: 1020px) {
+      #mobile-menu, #mobile-button{
+        display: block;
+      }
+      .nav_1{
+        display: none;
+      }
+      .cards_ide_1{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 20%;
+        left: 2%;
+      }
+      .coding_g{
+        display: none;
+      }
+      .what_is_ide .glitch{
+        font-size: 5rem;
+      }
+      .what_is_ide h3{
+        font-size: 20px;
+        line-height: 30px;
+      }
+      .what_means_ide img{
+        height: 300px;
+        width: 250px;
+        border: none;
+      }
+      .what_means_ide p{
+        font-size: 20px;
+        margin-left: 5%;
+        line-height: 20px;
+      }
+      .diff_ide_vs_txt h2{
+        font-size: 20px;
+      }
+      .diff_ide_vs_txt h2:nth-child(2){
+        font-size: 16px;
+      }
+      .diff_ide_vs_txt h3{
+        font-size: 15px;
+        line-height: 20px;
+      }
+      .diff_ide_vs_txt .factors_ide{
+        font-size: 10px;
+      }
+      .diff_ide_vs_txt ul p{
+        font-size: 14px;
+      }
+      .diff_ide_vs_txt ul li{
+        font-size: 10px;
+      }
+    }
+    @media (min-width: 1020px) and (max-width: 1200px) {
+      #mobile-menu, #mobile-button{
+        display: block;
+      }
+      .nav_1{
+        display: none;
+      }
+      .what_is_ide .glitch{
+        font-size: 5rem;
+      }
+      .what_is_ide h3{
+        font-size: 20px;
+        line-height: 30px;
+      }
+      .coding_g{
+        width: 400px;
+        height: 300px;
+      }
+      .what_means_ide p{
+        font-size: 25px;
+        margin-left: 5%;
+        line-height: 20px;
+      }
+      .what_means_ide img{
+        height: 300px;
+        width: 250px;
+        border: none;
+      }
+      .diff_ide_vs_txt h2{
+        font-size: 22px;
+      }
+      .diff_ide_vs_txt h2:nth-child(2){
+        font-size: 18px;
+      }
+      .diff_ide_vs_txt h3{
+        font-size: 17px;
+        line-height: 22px;
+      }
+      .diff_ide_vs_txt .factors_ide{
+        font-size: 12px;
+      }
+      .diff_ide_vs_txt ul p{
+        font-size: 16px;
+      }
+      .diff_ide_vs_txt ul li{
+        font-size: 12px;
+      }
+    }
+    @media (min-width: 1200px) and (max-width: 1600px){
+      #mobile-menu, #mobile-button{
+        display: block;
+      }
+      .nav_1{
+        display: none;
+      }
+      .what_is_ide .glitch{
+        font-size: 6rem;
+      }
+      .what_is_ide h3{
+        font-size: 30px;
+        line-height: 30px;
+      }
+      .what_means_ide img{
+        height: 300px;
+        width: 250px;
+        border: none;
+      }
+      .coding_g{
+        width: 600px;
+        height: 400px;
+      }
+      .what_means_ide p{
+        font-size: 30px;
+        margin-left: 5%;
+        line-height: 20px;
+      }
+      .diff_ide_vs_txt h2{
+        font-size: 25px;
+      }
+      .diff_ide_vs_txt h2:nth-child(2){
+        font-size: 21px;
+      }
+      .diff_ide_vs_txt h3{
+        font-size: 20px;
+        line-height: 25px;
+      }
+      .diff_ide_vs_txt .factors_ide{
+        font-size: 15px;
+      }
+      .diff_ide_vs_txt ul p{
+        font-size: 20px;
+      }
+      .diff_ide_vs_txt ul li{
+        font-size: 15px;
+      }
+    }
   
   

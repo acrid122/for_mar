@@ -1,5 +1,5 @@
 window.onload = () => {
-    //document.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
     //Выделение текущей страницы
     const path = window.location.pathname;
     const page_name = path.split("/").pop();

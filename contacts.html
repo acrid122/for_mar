@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--Мета теги-->
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+    <meta content='true' name='HandheldFriendly'/>
+    <meta content='width' name='MobileOptimized'/>
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
+    <!--Иконка-->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel = "stylesheet" href = "contacts.css">
+    <!--Название сайта-->
+    <title>BestIDE</title>
+    </head>
+    <body>
+        <header>
+            <nav class="nav_1"> 		
+                <a href="index.html" class="menu_button">
+                    Главная
+                </a>
+                <a href="links.html" class="menu_button">
+                    Обзор
+                </a>
+                <a href="contacts.html" class="menu_button">
+                    Контакты
+                </a>
+                <a href="hotkeys.html" class="menu_button">
+                    Горячие клавиши
+                </a> 
+                <a href="compile.html" class="menu_button">
+                    Компилятор
+                </a> 
+            </nav>
+            <input type="checkbox" id="mobile-input" />
+            <label for="mobile-input" id="mobile-button"><span></span></label>
+            <div id="mobile-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="links.html">Обзор</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="hotkeys.html">Горячие клавиши</a></li>
+                    <li><a href="compile.html">Компилятор</a></li>
+                </ul>
+            </div>
+        </header>
+        <form class="form">
+            <h2>Напишите нам</h2>
+            <p type="Имя:"><input placeholder="Напишите Ваше имя.."></input></p>
+            <p type="Email:"><input placeholder="Связаться с Вами.."></input></p>
+            <p type="Сообщение:"><input placeholder="Что хотите сказать нам.."></input></p>
+            <button>Отправить сообщение</button>
+            <div>
+              <span class="fa fa-phone"></span>8-800-555-35-35
+              <span class="fa fa-envelope-o"></span> marina_malina@outlook.com
+            </div>
+          </form>
+          <script src="jquery-3.6.1.min.js"></script>
+          <script src = "contacts.js"></script>
+        </body>
+</html>

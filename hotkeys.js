@@ -26,11 +26,41 @@ for(let i = 0; i < cards_ide.length; ++i){
                         mimg.src='phpstorm_hot.jpg';
                     }
                     document.querySelector('main').prepend(mimg);
-                    mimg.style.position = "absolute";
-                    mimg.style.left = "50%";
-                    mimg.style.top = "25%";
-                    mimg.style.width = "700px";
-                    mimg.style.height = "500px";
+                    if(window.innerWidth <= 780){
+                        mimg.style.position = "absolute";
+                        mimg.style.left = "20%";
+                        mimg.style.top = "50%";
+                        mimg.style.width = "350px";
+                        mimg.style.height = "250px";
+                    }
+                    else if(window.innerWidth >= 780 && window.innerWidth <= 1020){
+                        mimg.style.position = "absolute";
+                        mimg.style.left = "40%";
+                        mimg.style.top = "25%";
+                        mimg.style.width = "450px";
+                        mimg.style.height = "300px";
+                    }
+                    else if(window.innerWidth >= 1020 && window.innerWidth <= 1200){
+                        mimg.style.position = "absolute";
+                        mimg.style.left = "30%";
+                        mimg.style.top = "25%";
+                        mimg.style.width = "650px";
+                        mimg.style.height = "300px";
+                    }
+                    else if(window.innerWidth >= 1200 && window.innerWidth <= 1500){
+                        mimg.style.position = "absolute";
+                        mimg.style.left = "40%";
+                        mimg.style.top = "40%";
+                        mimg.style.width = "650px";
+                        mimg.style.height = "450px";
+                    }
+                    else{
+                        mimg.style.position = "absolute";
+                        mimg.style.left = "40%";
+                        mimg.style.top = "30%";
+                        mimg.style.width = "750px";
+                        mimg.style.height = "550px";
+                    }
                 }
             }
         }
@@ -51,16 +81,66 @@ for(let i = 0; i < cards_ide.length; ++i){
                     }
                     document.querySelector('main').prepend(mimg1);
                     document.querySelector('main').prepend(mimg);
-                    mimg.style.width = "450px";
-                    mimg.style.height = "500px";
-                    mimg1.style.width = "450px";
-                    mimg1.style.height = "500px";
-                    mimg.style.position = "absolute";
-                    mimg.style.left = "2%";
-                    mimg.style.top = "25%";
-                    mimg1.style.position = "absolute";
-                    mimg1.style.right = "2%";
-                    mimg1.style.top = "25%";
+                    if(window.innerWidth <= 780){
+                        mimg.style.width = "250px";
+                        mimg.style.height = "300px";
+                        mimg1.style.width = "250px";
+                        mimg1.style.height = "300px";
+                        mimg.style.position = "absolute";
+                        mimg.style.left = "2%";
+                        mimg.style.top = "5%";
+                        mimg1.style.position = "absolute";
+                        mimg1.style.right = "2%";
+                        mimg1.style.top = "65%";
+                    }
+                    else if(window.innerWidth >= 780 && window.innerWidth <= 1020){
+                        mimg.style.width = "350px";
+                        mimg.style.height = "400px";
+                        mimg1.style.width = "350px";
+                        mimg1.style.height = "400px";
+                        mimg.style.position = "absolute";
+                        mimg.style.left = "2%";
+                        mimg.style.top = "65%";
+                        mimg1.style.position = "absolute";
+                        mimg1.style.right = "2%";
+                        mimg1.style.top = "65%";
+                    }
+                    else if(window.innerWidth >= 1020 && window.innerWidth <= 1200){
+                        mimg.style.width = "350px";
+                        mimg.style.height = "400px";
+                        mimg1.style.width = "350px";
+                        mimg1.style.height = "400px";
+                        mimg.style.position = "absolute";
+                        mimg.style.left = "2%";
+                        mimg.style.top = "65%";
+                        mimg1.style.position = "absolute";
+                        mimg1.style.right = "2%";
+                        mimg1.style.top = "65%";
+                    }
+                    else if(window.innerWidth >= 1200 && window.innerWidth <= 1500){
+                        mimg.style.width = "550px";
+                        mimg.style.height = "400px";
+                        mimg1.style.width = "550px";
+                        mimg1.style.height = "400px";
+                        mimg.style.position = "absolute";
+                        mimg.style.left = "2%";
+                        mimg.style.top = "65%";
+                        mimg1.style.position = "absolute";
+                        mimg1.style.right = "2%";
+                        mimg1.style.top = "65%";
+                    }
+                    else{
+                        mimg.style.width = "500px";
+                        mimg.style.height = "500px";
+                        mimg1.style.width = "500px";
+                        mimg1.style.height = "500px";
+                        mimg.style.position = "absolute";
+                        mimg.style.left = "0%";
+                        mimg.style.top = "35%";
+                        mimg1.style.position = "absolute";
+                        mimg1.style.right = "0%";
+                        mimg1.style.top = "35%";
+                    }
                 }
             }
         }
@@ -83,11 +163,41 @@ for(let i = 0; i < cards_ide.length; ++i){
                         mimg.src='phpstorm_hot.jpg';
                     }
                     document.querySelector('main').prepend(mimg);
-                    mimg.style.width = "800px";
-                    mimg.style.height = "450px";
-                    mimg.style.position = "absolute";
-                    mimg.style.left = "2%";
-                    mimg.style.top = "25%";
+                    if(window.innerWidth <= 780){
+                        mimg.style.width = "400px";
+                        mimg.style.height = "300px";
+                        mimg.style.position = "absolute";
+                        mimg.style.left = "2%";
+                        mimg.style.top = "20%";
+                    }
+                    else if(window.innerWidth >= 780 && window.innerWidth <= 1020){
+                        mimg.style.width = "400px";
+                        mimg.style.height = "325px";
+                        mimg.style.position = "absolute";
+                        mimg.style.left = "2%";
+                        mimg.style.top = "10%";
+                    }
+                    else if(window.innerWidth >= 1020 && window.innerWidth <= 1200){
+                        mimg.style.position = "absolute";
+                        mimg.style.left = "5%";
+                        mimg.style.top = "5%";
+                        mimg.style.width = "550px";
+                        mimg.style.height = "300px";
+                    }
+                    else if(window.innerWidth >= 1200 && window.innerWidth <= 1500){
+                        mimg.style.position = "absolute";
+                        mimg.style.left = "5%";
+                        mimg.style.top = "40%";
+                        mimg.style.width = "550px";
+                        mimg.style.height = "400px";
+                    }
+                    else{
+                        mimg.style.position = "absolute";
+                        mimg.style.left = "5%";
+                        mimg.style.top = "30%";
+                        mimg.style.width = "750px";
+                        mimg.style.height = "500px";
+                    }
                 }
             }
         }

@@ -5,9 +5,34 @@ window.onload = () => {
     var ret_but = document.querySelector('.return_but');
     /*Init slider*/
     //All_width
-    var slideWidth_free = $('.slider_free .slider_line .ide_all_info').width() * 3.75;
-    var slideWidth_half_free = $('.slider_half-free .slider_line .ide_all_info').width() * 2.25;
-    var slideWidth_non_free = $('.slider_non-free .slider_line .ide_all_info').width() * 1.5;
+    var slideWidth_free = $('.slider_free .slider_line .ide_all_info').width();
+    var slideWidth_half_free = $('.slider_half-free .slider_line .ide_all_info').width();
+    var slideWidth_non_free = $('.slider_non-free .slider_line .ide_all_info').width();
+    if(window.innerWidth <= 780){
+        slideWidth_free = slideWidth_free * 2;
+        slideWidth_half_free = slideWidth_half_free * 1.5;
+        slideWidth_non_free = slideWidth_non_free * 1;
+    }
+    else if(window.innerWidth >= 780 && window.innerWidth <= 1020){
+        slideWidth_free = slideWidth_free * 2.25;
+        slideWidth_half_free = slideWidth_half_free * 1.75;
+        slideWidth_non_free = slideWidth_non_free * 1;
+    }
+    else if(window.innerWidth >= 1020 && window.innerWidth <= 1200){
+        slideWidth_free = slideWidth_free * 2.75;
+        slideWidth_half_free = slideWidth_half_free * 2;
+        slideWidth_non_free = slideWidth_non_free * 1;
+    }
+    else if(window.innerWidth >= 1200 && window.innerWidth <= 1500){
+        slideWidth_free = slideWidth_free * 3.25;
+        slideWidth_half_free = slideWidth_half_free * 2.25;
+        slideWidth_non_free = slideWidth_non_free * 1.1;
+    }
+    else{
+        slideWidth_free = slideWidth_free * 3.75;
+        slideWidth_half_free = slideWidth_half_free * 2.25;
+        slideWidth_non_free = slideWidth_non_free * 1.3;
+    }
     //All_height
     var slideHeight_free = $('.slider_free .slider_line .ide_all_info').height();
     var slideHeight_half_free = $('.slider_half-free .slider_line .ide_all_info').height();
@@ -84,11 +109,11 @@ window.onload = () => {
             slider.style.visibility = "visible";
             $('.return_but').css('display', 'block');
             $('.controls_but').css('display', 'block');
-        $('#checkbox').change(function(){
-            setInterval(function () {
-                moveRight();
-            }, 3000);
-        });
+            $('#checkbox').change(function(){
+                setInterval(function () {
+                    moveRight();
+                }, 3000);
+            });
             //Инициализация слайдера
             var slideCount = $('.slider_non-free .slider_line .ide_non-free').length;
             var count = 0;
@@ -135,11 +160,11 @@ window.onload = () => {
             slider.style.visibility = "visible";
             $('.return_but').css('display', 'block');
             $('.controls_but').css('display', 'block');
-        $('#checkbox').change(function(){
-            setInterval(function () {
-                moveRight();
-            }, 3000);
-        });
+            $('#checkbox').change(function(){
+                setInterval(function () {
+                    moveRight();
+                }, 3000);
+            });
             //Инициализация слайдера
             var slideCount = $('.slider_half-free .slider_line .ide_all_info').length;
             var count = 0;
@@ -188,11 +213,11 @@ window.onload = () => {
             slider.style.visibility = "visible";
             $('.return_but').css('display', 'block');
             $('.controls_but').css('display', 'block');
-        $('#checkbox').change(function(){
-            setInterval(function () {
-                moveRight();
-            }, 3000);
-        });
+            $('#checkbox').change(function(){
+                setInterval(function () {
+                    moveRight();
+                }, 3000);
+            });
             //Инициализация слайдера
             var slideCount = $('.slider_free .slider_line .ide_all_info').length;
             var count = 0;
@@ -237,3 +262,4 @@ window.onload = () => {
     }
 }
 }
+//Удаление стрелок при нажатии на бургер
